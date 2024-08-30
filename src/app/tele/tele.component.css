@@ -1,0 +1,86 @@
+.containertele{
+    background-image: url("/images/back2.png");
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title .titlebox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkred;
+    padding: 10px;
+    width: 50%;
+    
+}
+
+.box{
+    display: flex;
+
+}
+
+.box p{
+    padding: 20px;
+}
+
+.box img{
+     padding: 20px;
+}
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: #7839ab;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and(max-width:560px) {
+    .containertele{
+        width: 100%;
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width:560px) {
+    .containertele .box{
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and(max-width:560px) {
+    .containertele .box p{
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .box img{
+        margin: 0 auto;
+    }
+}
+
+@media screen and(max-width:560px) {
+    .titlebox{
+        text-align:center;
+    }
+}

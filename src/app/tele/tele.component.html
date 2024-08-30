@@ -1,0 +1,35 @@
+<div class="containertele">
+        @if(!data.adult){
+        <div class="title">
+            <h2>{{data.title | json}}</h2>
+        </div>
+        <div class="box">
+            <img [src]="image" alt="">
+            <p>{{overview | json}}</p>
+        </div>
+    }
+    @else{
+        <div class="adultos">
+            <div class="title">
+                <div class="titlebox">
+                    <h3>Contenido para adultos</h3>
+                </div>
+            </div>
+            <div class="box">
+                <p>Esta pelicula contiene material restringido a menores de edad, que incluye desnudez y representaciones explícitas de actividad sexual. Al entrar, afirma que tiene por lo menos 18 años de edad o la mayoría de edad en la jurisdicción desde que está accediendo el sitio web y que da consentimiento en ver contenido sexualmente explícito.</p>
+            </div>
+            <div class="btn">
+                <button (click)="mayorEdad()">Soy mayor de 18</button>
+            </div>
+        </div>
+        @if(mayor){
+            <div class="title">
+                <h2>{{data.title | json}}</h2>
+            </div>
+            <div class="box">
+                <img [src]="image" alt="">
+                <p>{{overview | json}}</p>
+            </div>
+        }
+    }
+    </div>

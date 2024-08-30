@@ -1,0 +1,55 @@
+.container{
+    background-image: url("/images/back.png") ;
+    width: 1366px;
+    height:768px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat:repeat;
+}
+.tele{
+    width: 600px;
+    height: 500px;
+    margin-left: 15%;
+}
+
+.btn{
+    margin-top: 20%;
+    margin-left: 15%;
+}
+
+button{
+    padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover{
+    background-color: #45a049;
+}
+
+button:active{
+    background-color: #3e8e41;
+}
+
+@media screen and (max-width:560px) {
+    .container{
+        display: block;
+        width: 360px;
+        height: 730px;
+        background-image: url("/images/back3.png");
+    }
+
+    .btn{
+        margin-top: 0;
+        margin-left: 30%;
+    }
+    .tele{
+        margin-left: 0%;
+        width: 360px;
+        height: 100%;
+    }
+}
